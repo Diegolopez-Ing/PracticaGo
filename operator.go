@@ -1,8 +1,10 @@
 package main
+
 import "fmt"
 
 var z = 41
 
+// The main function is the entry point of the program and is executed first.
 func main() {
 	var w int
 	y := "James Bond"
@@ -15,6 +17,7 @@ func main() {
 	numero()
 }
 
+// Numero() is a function that prints the value of z.
 func numero() {
 	fmt.Println(z)
 }
