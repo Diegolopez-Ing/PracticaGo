@@ -9,11 +9,11 @@ type dinero int
 var b dinero
 
 func main() {
-	a = 42
+	a := 42
 	fmt.Println(a)
 	fmt.Printf("%T\n", a)
 
-	b = 1000
+	b := 1000
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
 	//a = b   cannot use b (variable of type dinero) as int value in assignment
