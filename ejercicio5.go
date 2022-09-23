@@ -2,17 +2,36 @@ package main
 
 import "fmt"
 
-type typetest int
-
-var x typetest
-var y int
+type persona struct {
+	nombre     string
+	apellido   string
+	saboresFav []string
+}
 
 func main() {
-	fmt.Println(x)
-	fmt.Printf("%T\n", x)
-	x = 42
-	fmt.Println(x)
-	y = int(x)
-	fmt.Println(y)
-	fmt.Printf("EL tipo de y es: %T\n", y)
+
+	p1 := persona{
+		nombre:     "Diego",
+		apellido:   "Lopez",
+		saboresFav: []string{"Chantillí", "Vainilla", "Milkey Way"}, //ülitmo elemento lleva ,
+	}
+
+	p2 := persona{
+		nombre:     "Sergio",
+		apellido:   "Algarin",
+		saboresFav: []string{"Brownie", "Ron con pasas", "Oreo"},
+	}
+
+	fmt.Println(p1.nombre)
+	fmt.Println(p1.apellido)
+
+	for i, v := range p1.saboresFav {
+		fmt.Println("\t", i, v)
+	}
+
+	for i, v := range p2.saboresFav {
+		fmt.Println("\t", i, v)
+
+	}
+
 }
