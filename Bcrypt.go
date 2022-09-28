@@ -1,4 +1,4 @@
-/* package main
+package main
 
 import (
 	"fmt"
@@ -14,12 +14,11 @@ func main() {
 	}
 	fmt.Println(s)
 	fmt.Println(bs)
-	claveLogin:= `clave123`
-	err = bcrypt.CompareHashAndPassword(bs,[]byte(claveLogin))
-	if err != nil{
+	claveLogin := `clave123`
+	err = bcrypt.CompareHashAndPassword(bs, []byte(claveLogin))
+	if err != nil {
 		fmt.Println("No te puede Loguear")
 		return
 	}
-	fmt.Println(#Te haz logueado)
+	fmt.Println("Te haz logueado")
 }
-*/
