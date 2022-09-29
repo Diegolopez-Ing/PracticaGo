@@ -1,0 +1,1 @@
+2022/09/29 01:04:27 un error ocurrió open sin-archivo.txt: no such file or directory
